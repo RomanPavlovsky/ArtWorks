@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  width: 330px;
+  .image {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .info {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 51px;
+    .userpic {
+      width: 38px;
+      height: 38px;
+      img {
+        border: none;
+        border-radius: 50%;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .discription {
+      padding-left: 10px;
+    }
+  }
+  .remove {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 34px;
+    height: 34px;
+    background: url(../../assets/icons/Delete_icon.svg) no-repeat center;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2 ease;
+    &:hover {
+      background: url(../../assets/icons/Cross.svg) no-repeat center;
+      background-color: gray;
+    }
+  }
+}
