@@ -2,10 +2,13 @@ import React from "react";
 import styles from "./itemcard.module.scss";
 import { deleteItems } from "../../Redux/Slices/itemsSlice";
 import { useDispatch } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 const ItemCard = ({ id, title, image, author, user }) => {
+  const { pathname } = useLocation();
   const dispatch = useDispatch();
   const removeOnClick = () => dispatch(deleteItems(id));
+  const saveOnClick = () => dispatch(deleteItems(id));
   return (
     <div className={styles.container}>
       <div className={styles.image}>
@@ -24,9 +27,12 @@ const ItemCard = ({ id, title, image, author, user }) => {
           </div>
         </div>
       </div>
-      <button onClick={removeOnClick} className={styles.remove}>
-        <div className={styles.close}></div>
-      </button>
+      {pathname === "/saved" && (
+        <button onClick={removeOnClick} className={styles.remove}></button>
+      )}
+      {pathname === "/" && (
+        <button onClick={saveOnClick} className={styles.add}></button>
+      )}
     </div>
   );
 };

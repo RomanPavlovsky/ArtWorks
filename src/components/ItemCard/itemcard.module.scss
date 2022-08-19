@@ -46,9 +46,26 @@
     background-color: gray;
     border: none;
     border-radius: 50%;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     &:hover {
       background: url(../../assets/icons/Cross.svg) no-repeat center;
+      background-color: gray;
+    }
+  }
+  .add {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 34px;
+    height: 34px;
+    background: url(../../assets/icons/save.svg) no-repeat center;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    &:hover {
+      background: url(../../assets/icons/saved.svg) no-repeat center;
       background-color: gray;
     }
   }
