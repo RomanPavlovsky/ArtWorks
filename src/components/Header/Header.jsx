@@ -2,11 +2,20 @@ import React from "react";
 import style from "./header.module.scss";
 import logo from "../../assets/img/BlackLogo.png";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {
+  setOpenUserModal,
+  setOpenSettingModal,
+} from "../../Redux/Slices/modalSlice";
 
 import userpic from "../../assets/img/Userpic.png";
 import notification_icon from "../../assets/icons/Notification.svg";
+import Modal from "../UI/Modal";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const openUserModal = () => dispatch(setOpenUserModal());
+  const openSettingModal = () => dispatch(setOpenSettingModal());
   return (
     <header className={style.wrapper}>
       <div className={style.container}>
@@ -27,9 +36,9 @@ const Header = () => {
             </div>
           </Link>
           <Link to="*" style={{ textdecoration: "none" }}>
-            <div className={style.settings}></div>
+            <div onClick={openSettingModal} className={style.settings}></div>
           </Link>
-          <div className={style.user}>
+          <div onClick={openUserModal} className={style.user}>
             <img src={userpic} alt="user" />
           </div>
           <div className={style.lang}>
