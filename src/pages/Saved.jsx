@@ -47,7 +47,7 @@ const Saved = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.info}>
-          <h1>Saved Artworks</h1>
+          <h2>Saved Artworks</h2>
         </div>
         <div className={styles.search}>
           <Search />

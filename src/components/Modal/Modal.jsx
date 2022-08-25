@@ -4,7 +4,7 @@ import styles from "./modal.module.scss";
 import cn from "classnames";
 
 import { useSelector, useDispatch } from "react-redux";
-import { setCloseModal } from "../../../Redux/Slices/modalSlice";
+import { setCloseModal } from "../../Redux/Slices/modalSlice";
 
 const Modal = () => {
   const { modalActive, openItemModal, openSettingModal, openUserModal } =
@@ -12,8 +12,6 @@ const Modal = () => {
   const dispatch = useDispatch();
   const closeModal = () => dispatch(setCloseModal());
 
-  console.log(modalActive);
-  console.log(openUserModal);
   return (
     <div
       onClick={closeModal}

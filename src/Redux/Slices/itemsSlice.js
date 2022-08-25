@@ -33,7 +33,7 @@ const initialState = {
   totalCount: 0,
   loading: "pending",
   currentPage: 1,
-  limitPage: 4,
+  limitPage: 6,
   removeId: null,
 };
 

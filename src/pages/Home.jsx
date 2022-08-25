@@ -44,7 +44,7 @@ const Home = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.info}>
-          <h1>Artworks</h1>
+          <h2>Artworks</h2>
         </div>
         <div className={styles.search}>
           <Search />

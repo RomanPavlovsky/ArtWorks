@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import nfimage from "../assets/img/notfound.png";
 import styles from "./notfound.module.scss";
 
@@ -10,7 +10,7 @@ const NotFound = () => {
         <img src={nfimage} alt="404 Not Found" />
 
         <Link className={styles.back} to="/">
-          <div className={styles.icon}> </div>
+          <div className={styles.icon}></div>
         </Link>
       </div>
     </div>
