@@ -5,6 +5,7 @@ import cn from "classnames";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setCloseModal } from "../../Redux/Slices/modalSlice";
+import ItemExpand from "../ItemExpand";
 
 const Modal = () => {
   const { modalActive, openItemModal, openSettingModal, openUserModal } =
@@ -29,7 +30,7 @@ const Modal = () => {
       >
         {openUserModal && <div>usercomponent</div>}
         {openSettingModal && <div>settingcomponent</div>}
-        {openItemModal && <div>itemcomponent</div>}
+        {openItemModal && <ItemExpand />}
       </div>
     </div>
   );

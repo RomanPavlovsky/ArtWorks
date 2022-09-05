@@ -11,7 +11,7 @@ import ItemCard from "../components/ItemCard";
 import Loader from "../components/Loader";
 import Pagination from "../components/Pagination";
 import Search from "../components/Search";
-
+import Modal from "../components/Modal";
 import styles from "./home.module.scss";
 
 const Home = () => {
@@ -83,6 +83,7 @@ const Home = () => {
           ) : null}
         </div>
       </div>
+      <Modal />
     </div>
   );
 };

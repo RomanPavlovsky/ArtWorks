@@ -1,24 +1,24 @@
 import React from "react";
 import styles from "./itemcard.module.scss";
 import { deleteItems } from "../../Redux/Slices/itemsSlice";
-import { setOpenItemModal } from "../../Redux/Slices/modalSlice";
+import { fetchItemModal } from "../../Redux/Slices/modalSlice";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
-const ItemCard = ({ id, title, image, author, user }) => {
+const ItemCard = ({ id, title, image_card, author, author_image }) => {
   const { pathname } = useLocation();
   const dispatch = useDispatch();
   const removeOnClick = () => dispatch(deleteItems(id));
   const saveOnClick = () => dispatch(deleteItems(id));
-  const openItemModal = () => dispatch(setOpenItemModal());
+  const openItemModal = () => dispatch(fetchItemModal(id));
   return (
     <div className={styles.container}>
       <div onClick={openItemModal} className={styles.image}>
-        <img src={image} alt="img" />
+        <img src={image_card} alt="img" />
       </div>
       <div className={styles.info}>
         <div className={styles.userpic}>
-          <img src={user} alt="user" />
+          <img src={author_image} alt="user" />
         </div>
         <div className={styles.discription}>
           <div className={styles.title}>

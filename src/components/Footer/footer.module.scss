@@ -1,7 +1,7 @@
 .wrapper {
   background-color: black;
   width: 100%;
-  height: 278px;
+  height: 220px;
   display: flex;
   justify-content: center;
   .container {
@@ -20,11 +20,14 @@
       justify-items: start;
       color: white;
       width: 200px;
-      height: 156px;
+      height: 130px;
 
       .logo {
         cursor: pointer;
         grid-area: 1 / 1 / 2 / 2;
+        img {
+          width: 120px;
+        }
       }
       .p1 {
         cursor: pointer;
@@ -43,7 +46,7 @@
       grid-row-gap: 10px;
       align-items: center;
       width: 430px;
-      height: 156px;
+      height: 130px;
       color: white;
 
       .domen {

@@ -22,7 +22,6 @@ export const deleteItems = createAsyncThunk(
   "items/deleteItems",
   async (id, { dispatch }) => {
     const response = await axios.delete(`http://localhost:3030/artworks/${id}`);
-    console.log(response);
     dispatch(removeItems(id));
     return id;
   }

@@ -28,7 +28,6 @@ const Search = () => {
     setValue(event.target.value);
     updateSearchValue(event.target.value);
   };
-  console.log(value);
   return (
     <div className={styles.search}>
       <input

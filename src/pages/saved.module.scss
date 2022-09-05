@@ -9,7 +9,7 @@
     padding: 40px 20px 50px;
     .info {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
     }
     .search {
@@ -62,7 +62,7 @@
     .pagination {
       display: flex;
       align-items: center;
-      justify-content: end;
+      justify-content: flex-end;
       .result {
         p {
           opacity: 0.6;
