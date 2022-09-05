@@ -17,18 +17,19 @@ const ItemCard = ({ id, title, image_card, author, author_image }) => {
         <img src={image_card} alt="img" />
       </div>
       <div className={styles.info}>
-        <div className={styles.userpic}>
+        <div className={styles.author_photo}>
           <img src={author_image} alt="user" />
         </div>
         <div className={styles.discription}>
-          <div className={styles.title}>
-            <p>{title}</p>
-          </div>
-          <div className={styles.author}>
+          <div className={styles.author_name}>
             <p>{author}</p>
+          </div>
+          <div className={styles.artwork_title}>
+            <p>{title}</p>
           </div>
         </div>
       </div>
+
       {pathname === "/saved" && (
         <button onClick={removeOnClick} className={styles.remove}></button>
       )}

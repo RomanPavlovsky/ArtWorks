@@ -36,9 +36,11 @@
       }
       &.next {
         background: url(../../assets/icons/rightarrow.svg) no-repeat center;
+        background-size: 7px;
       }
       &.prev {
         background: url(../../assets/icons/leftarrow.svg) no-repeat center;
+        background-size: 7px;
       }
       &.disabled {
         opacity: 0.5;

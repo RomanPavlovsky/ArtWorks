@@ -16,11 +16,7 @@
   .info {
     padding: 3px 0;
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 51px;
-    .userpic {
-      // background-color: red;
+    .author_photo {
       width: 40px;
       height: 40px;
       img {
@@ -32,7 +28,16 @@
       }
     }
     .discription {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
       padding-left: 10px;
+      .author_name {
+        font-weight: bold;
+      }
+      .artwork_title {
+        font-style: italic;
+      }
     }
   }
   .remove {
