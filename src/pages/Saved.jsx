@@ -12,8 +12,6 @@ import ItemCard from "../components/ItemCard";
 import Loader from "../components/Loader";
 import Pagination from "../components/Pagination";
 import Search from "../components/Search";
-import Modal from "../components/Modal";
-import ItemExpand from "../components/ItemExpand";
 
 //styles
 import styles from "./saved.module.scss";
@@ -88,7 +86,6 @@ const Saved = () => {
           ) : null}
         </div>
       </div>
-      <Modal />
     </div>
   );
 };

@@ -21,7 +21,7 @@
     },
     {
       "author_image": "https://i.postimg.cc/BZRGdjzr/Auguste-Rodin.jpg",
-      "title": "The kiss",
+      "title": "The Kiss",
       "category": 1,
       "image_card": "https://i.postimg.cc/c48dHRY1/kiss.jpg",
       "image_full": "https://i.postimg.cc/mZ7yYq70/kiss.jpg",
@@ -55,7 +55,6 @@
       "author": "Rem Koolhaas",
       "id": 8
     },
-
     {
       "author_image": "https://i.postimg.cc/WpZRprk0/40-Shaun-Killa.jpg",
       "title": "Museum of the future",
@@ -65,7 +64,6 @@
       "author": "Shaun Killa",
       "id": 7
     },
-
     {
       "author_image": "https://i.postimg.cc/wMZNqhX7/Ivan-Shishkin.jpg",
       "title": "Morning in a Pine Forest",
@@ -75,7 +73,6 @@
       "author": "Ivan Ivanovich Shishkin",
       "id": 9
     },
-
     {
       "author_image": "https://i.postimg.cc/ydn97GBv/Claude-Monet-1899-Nadar.jpg",
       "title": "Landscape On The Ile Saint Martin",
@@ -103,7 +100,6 @@
       "author": "Michelangelo",
       "id": 2
     },
-
     {
       "author_image": "https://i.postimg.cc/Prw3RpCq/3991.jpg",
       "title": "Trip",
@@ -149,7 +145,6 @@
       "author": "Umberto Boccioni",
       "id": 4
     },
-
     {
       "author_image": "https://i.postimg.cc/ZqjgPWR5/Pierre-Auguste-Renoir-uncropped-image.jpg",
       "title": "Portrait of Jeanne Samary",
@@ -168,7 +163,6 @@
       "author": "Leonardo da Vinci",
       "id": 18
     },
-
     {
       "author_image": "https://i.postimg.cc/J7FdMQgp/Sahba.jpg",
       "title": "Lotus Temple",
@@ -187,7 +181,6 @@
       "author": "Vincent van Gogh",
       "id": 19
     },
-
     {
       "author_image": "https://i.postimg.cc/9MYHgy23/image.jpg",
       "title": "Vanitas with Violin and Glass Ball",

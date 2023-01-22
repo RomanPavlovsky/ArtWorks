@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Categories from "./components/Categories";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Modal from "./components/Modal";
 
 //pages
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Saved" element={<Saved />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <Modal />
       <Footer />
     </>
   );

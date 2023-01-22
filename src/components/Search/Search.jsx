@@ -8,7 +8,7 @@ import debounce from "lodash.debounce";
 const Search = () => {
   const dispatch = useDispatch();
 
-  // autotarget afcter close
+  // autotarget after close
   const inputRef = useRef();
   const onClickClear = () => {
     dispatch(setSearchValue(""));

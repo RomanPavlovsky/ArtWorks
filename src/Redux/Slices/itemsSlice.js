@@ -33,7 +33,7 @@ const initialState = {
   loading: "pending",
   currentPage: 1,
   limitPage: 6,
-  removeId: null,
+  removeId: 0,
 };
 
 export const itemsSlice = createSlice({
